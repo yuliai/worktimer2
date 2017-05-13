@@ -1,0 +1,19 @@
+{
+    "name": "yuliai/worktimer",
+    "description": "Just a project for learning",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yulia Ivanova",
+            "email": "ivanova.yu3@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "wt\\": ""
+        }
+    }
+}
