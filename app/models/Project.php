@@ -2,17 +2,14 @@
 
 namespace wt\app\models;
 
-class Project
+use wt\lib\AbstractModelClass as AbstractModelClass;
+
+class Project extends AbstractModelClass
 {
     protected $id;
     protected $name;
     protected $plannedTime;
     protected $spendedTime;
-
-    public function __construct()
-    {
-        die('Hi.');
-    }
 
     protected function getPlannedTime() {}
 

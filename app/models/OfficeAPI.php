@@ -2,7 +2,9 @@
 
 namespace wt\app\models;
 
-class OfficeAPI
+use wt\lib\AbstractModelClass as AbstractModelClass;
+
+class OfficeAPI extends AbstractModelClass
 {
 
 }

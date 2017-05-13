@@ -2,7 +2,9 @@
 
 namespace wt\app\models;
 
-class DataCollector
+use wt\lib\AbstractModelClass as AbstractModelClass;
+
+class DataCollector extends AbstractModelClass
 {
 
 }
