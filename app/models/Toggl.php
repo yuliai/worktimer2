@@ -4,6 +4,7 @@ namespace wt\app\models;
 
 use wt\lib\AbstractModelClass as AbstractModelClass;
 use MorningTrain\TogglApi\TogglApi as ToggleAPI;
+use MorningTrain\TogglApi\TogglReportsApi as ToggleReportsAPI;
 
 class Toggl extends AbstractModelClass
 {
@@ -21,6 +22,14 @@ class Toggl extends AbstractModelClass
     {
         if (!$this->toggl) {
             $this->toggl = new ToggleAPI($this->getApiToken());
+        }
+        return $this->toggl;
+    }
+
+    public function getTogglReports()
+    {
+        if (!$this->toggl) {
+            $this->toggl = new ToggleReportsAPI($this->getApiToken());
         }
         return $this->toggl;
     }
